@@ -28,4 +28,15 @@
   --git merge-- 병합
   1. git merge add-style: 현재 branch에 add-style을 병합 
   -> 병합시 기존 파일과 충돌이 일어날 수 있음.
+
+  --git reset-- 삭제, 버전 되돌리기
+  1. git reset --hard HEAD~: 가장 최근 COMMIT삭제
+  2. git reset --hard ORIG_HEAD: 가장 최근 삭제된 COMMIT복구하며 돌아감.
+  3. git reset --hard HEAD~3 : 총 세 단계 뒤로 돌아감.
+  4. git reset --hard a4a802ecb2f587415584280542541c6f3ea08be6: 돌아갈 버젼의 commit아이디를 입력하여 복구
+
+  --github upload--
+  1. git remote add origin https://github.com/antipiebse/test-repo.git  origin은 저장할 별칭
+  2. git push origin master: master branch만 저장
+  3. git push origin --all: 모든 branch를 저장
 -->
